@@ -147,7 +147,7 @@
     <div class="player-container">
         <h1>FANTASTICA RADIO</h1>
         <audio id="radioPlayer">
-            <source src="http://play14.tikast.com:8078/live" type="audio/mpeg">
+            <source src="http://195.154.79.204:8078/stream" type="audio/mpeg">
             Tu navegador no soporta el elemento de audio.
         </audio>
         <div class="controls">
@@ -193,7 +193,7 @@
 
         async function updateNowPlaying() {
             try {
-                const response = await fetch('https://api.f-97.com/icy?url=https://stream.zeno.fm/25ucs5hf9s8uv');
+                const response = await fetch('https://api.f-97.com/icy?url=http://195.154.79.204:8078/stream');
                 const data = await response.json();
 
                 const currentSong = data.songtitle;
@@ -224,3 +224,4 @@
     </script>
 </body>
 </html>
+
